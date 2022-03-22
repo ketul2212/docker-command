@@ -1,0 +1,57 @@
+Note:-
+	docker run = docker create + docker start
+
+Docker Command:-
+	01.) docker run in28min/todo-rest-api-h2:1.0.0.RELEASE
+	02.) docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+	03.) docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+	04.) docker logs 2f268
+	05.) docker logs -f 2f268
+	06.) docker container ls (docker ps) 
+	07.) docker images
+	08.) docker container ls -a (docker ps -a)
+	09.) docker container stop b057
+	10.) docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
+	11.) docker pull mysql
+	12.) docker search mysql
+	13.) docker image inspect f8049a029560
+	14.) docker image remove 826efd84393b
+	15.) docker container run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+	16.) docker container pause 64d
+	17.) docker container unpause 64d
+	18.) docker container inspect 64d
+	19.) docker container prune
+	20.) docker container stop 64d
+	21.) docker container kill 64d
+	22.) docker events
+	23.) docker top 7e9
+	24.) docker stats
+	25.) docker run -p 5000:5000 -d --restart=always in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+	26.) docker run -p 5000:5000 -d --restart=no in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+	27.) docker run -p 5001:5000 -m 512m --cpu-quota 5000 -d --restart=always in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+	28.) docker system df
+	29.) docker version
+	30.) docker -v
+	31.) docker --version
+	32.) docker create hello-world
+	33.) docker start -a 8144dcce3a523e6d59c6766c5897d895a24cb8a9b6bce0822e33b1983002590f (-a means attach)
+	34.) docker run busybox ping google.com
+		-> busybox is a image of linux OS.
+	35.) docker exec -i -t 20 sh
+		-> To access inside running container which has id '20' and write command like ls, pwd, cd etc... and for exit press 'ctrl + d'.
+	36.) docker build .
+	
+urls:-
+	1.) http://localhost:5000/hello-world
+	2.) http://localhost:5000/hello-world-bean	
+	
+For Project:-
+	1.) docker run -p 9411:9411 openzipkin/zipkin:2.23
+	2.) docker build -f Dockerfile -t currency-exchange-service .
+	3.) docker run -p 8000:8085 currency-exchange-service
+	
+	using docker-compose
+		1.) docker-compose up
+		2.) docker-compose down
+	
+	
