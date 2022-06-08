@@ -55,3 +55,22 @@ For Project:-
 		2.) docker-compose down
 	
 	
+Q. 1) How to create image for java?
+Ans.) -> 1st create a jar file then run below command.
+      	command:- 
+	    Syntax:-
+	    	docker build -f [docker-file-name] -t [new-image-name] [directory]
+	    Ex:-
+		docker build -f Dockerfile -t gtu-result .
+	
+Q. ) How to push docker image to docker hub
+Ans.) -> 1st create a tag
+	    i.) docker tag [image-name]:[version] [dockerhub-username]/[image-name]:[version]
+	    			(or)
+      		docker tag [image-name]:[version] [dockerhub-username]/[image-name]
+      	        Ex:-
+	     	    docker tag gtu-result:latest ketul2212/gtu-result
+      -> 2nd run push command
+      	    ii.) docker push [image-name]
+	    	 Ex:-
+		    docker push ketul2212/gtu-result
